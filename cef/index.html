@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- External CSS libraries -->
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/fonts.css">
+
+</head>
+
+<body>
+	<div id="CarWash">
+		<div class="Form">
+			<div class="Container">
+				<img src="assets/images/Background.png" class="Background">
+				<img src="assets/images/Bg.png" class="BgPng">
+				<div class="Header">
+					<img src="assets/images/logo.png" class="LogoPng">
+					<span class="HeaderText">CAR WASHING</span>
+				</div>
+				<div class="Middle">
+
+					<div class="InfoBox">
+						<span>Möchten Sie Ihr Auto waschen?</span>
+						<span>Preis für diesen Service:</span>
+						<div class="MoneyBox">
+							<span>$500</span>
+						</div>
+					</div>
+
+					<div class="ButtonBox">
+						<div class="Button" onclick="alt.emit('carwash:accept');">
+							<span>Yes</span>
+						</div>
+						<div class="Button CancelButton" onclick="alt.emit('carwash:deny');">
+							<span>No</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- External JS libraries -->
+</body>
+
+</html>

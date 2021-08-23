@@ -1,0 +1,176 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	user-select: none;  
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	cursor: pointer;
+}
+
+.Form {
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: FadeAll 1.5s ease 1;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 31.25vw;
+    height: 20.8333333333vw;
+    border-radius: 0.7812500000vw;
+    background: rgba(21, 22, 31, 0.8);
+    overflow: hidden;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    width: 31.25vw;
+    height: 4.1666666667vw;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0vw 0.2083333333vw 0.7812500000vw rgba(0, 0, 0, 0.25);
+    border-radius: 0.7812500000vw 0.7812500000vw 0vw 0vw;
+}
+
+.LogoPng {
+    height: 1.5104166667vw;
+    margin-left: 1.3020833333vw;
+    filter: drop-shadow(0vw 0vw 1.25vw rgba(255, 255, 255, 0.1));
+    opacity: 0.55;
+}
+
+.HeaderText {
+    font-family: Montserrat-SemiBold;
+    font-size: 1.25vw;
+    line-height: 1.5104166667vw;
+    margin-left: 0.625vw;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.Middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    font-family: Montserrat-Medium;
+    font-size: 1.25vw;
+    line-height: 1.5104166667vw;
+    color: #ffffff;
+    text-shadow: 0vw 0vw 0.4166666667vw rgba(0, 0, 0, 0.25);
+}
+
+.MoneyBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.0625vw;
+    height: 2.6041666667vw;
+    margin-top: 1.7708333333vw;
+    background: rgba(21, 22, 31, 0.7);
+    border-radius: 0.3125vw;
+    filter: drop-shadow(0vw 0vw 1.25vw rgba(255, 255, 255, 0.05));
+}
+
+.MoneyBox span {
+    font-size: 1.5625vw;
+    color: #FFD738;
+    text-shadow: 0vw 0vw 0.4166666667vw rgba(255, 215, 56, 0.7);
+}
+
+.InfoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 7.8125vw;
+    margin-top: 2.34375vw;
+}
+
+.Background {
+    position: absolute;
+    width: 31.25vw;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.BgPng {
+    position: absolute;
+    width: 26.0416666667vw;
+    margin-top: 4.1666666667vw;
+    z-index: -1;
+    opacity: 0.5;
+    filter: drop-shadow(0vw 0vw 1.25vw rgba(255, 255, 255, 0.5));
+}
+
+.ButtonBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 18.2291666667vw;
+    height: 2.6041666667vw;
+    margin-top: 2.8645833333vw;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.3333333333vw;
+    height: 2.6041666667vw;
+    margin-left: 1.5625vw;
+    border-radius: 0.3125vw;
+    background: rgba(6, 206, 84, 0.8);
+    box-shadow: 0vw 0.4166666667vw 0.4166666667vw rgba(6, 206, 84, 0.2);
+    transition: all 0.1s ease;
+}
+
+.CancelButton {
+    background: rgba(249, 50, 12, 0.8);
+    box-shadow: 0vw 0.4166666667vw 0.4166666667vw rgba(249, 50, 12, 0.2);
+}
+
+.Button:hover {
+    transform: translateY(0.1041666667vw);
+    opacity: 0.8;
+}
+
+.InfoBox span:nth-child(2) {
+    margin-top: 0.4166666667vw;
+}
+
+.Button:first-child {
+    margin-left: 0vw;
+}
+
+@keyframes FadeAll {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
